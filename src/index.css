@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&&family=Rozha+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Righteous&family=Exile&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-worksans : "worksans", sans-serif;
+    --font-montserrat : "montserrat", sans-serif;
+    --font-dmsans : "dmsans", sans-serif;
+    --font-rozha : "rozha", sans-serif;
+    --font-righteous : "righteous", sans;
+    --font-exile : "exile", sans;
+}
