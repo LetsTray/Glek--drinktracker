@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const progress = ({ progress }) => {
   const getColor = () => {
     if (progress < 2) {
@@ -28,7 +27,9 @@ const progress = ({ progress }) => {
           {""}
         </div>
       </div>
-      <p class=" text-xl text-[#000000] font-medium font-montserrat">{progress} Gelas</p>
+      <p class=" text-xl text-[#000000] font-medium font-montserrat">
+        {progress} Gelas
+      </p>
     </div>
   );
 };

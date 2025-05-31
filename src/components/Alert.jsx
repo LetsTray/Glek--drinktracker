@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const alert = ({ show, setAlert, progress }) => {
+const Alert = ({ show, setAlert, progress }) => {
   useEffect(() => {
     if (progress >= 8) {
       setAlert(true);
@@ -15,7 +15,7 @@ const alert = ({ show, setAlert, progress }) => {
 
   return (
     <div className=" font-montserrat fixed top-10 pt-5 pb-5 pr-2 pl-2 rounded-2xl left-1/2 transform -translate-x-1/2 items-center justify-evenly gap-6  bg-[#1a4c86] w-[600px] flex">
-      <p class="text-lg text-white items-center justify-center flex">
+      <p className="text-lg text-white items-center justify-center flex">
         Selamat! Anda telah mencapai 2000 mL = 8 Gelas
       </p>
       <button
@@ -28,4 +28,4 @@ const alert = ({ show, setAlert, progress }) => {
   );
 };
 
-export default alert;
+export default Alert;

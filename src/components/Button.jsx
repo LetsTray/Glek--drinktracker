@@ -1,16 +1,25 @@
 import React from "react";
 
-const button = ({ progress, setProgress }) => {
+const Button = ({ progress, setProgress, setTime, setHistory }) => {
   const handleButtonClick = () => {
     if (progress < 8) {
+      const newTime = new Date();
       setProgress(progress + 1);
+      setTime(newTime);
+      setHistory((prevHistory) => [
+        ...prevHistory,
+        {
+          time: newTime,
+          amount: 250,
+        },
+      ]);
     }
   };
 
   return (
-    <div class=" justify-center items-end flex">
+    <div className=" justify-center items-end flex">
       <button
-        class=" bg-[#29a3e4] p-2 text-5xl text-center font-semibold text-white text-center justify-center font-montserrat w-20 h-20 rounded-3xl"
+        className=" bg-[#29a3e4] p-2 text-5xl text-center font-semibold text-white justify-center font-montserrat w-20 h-20 rounded-3xl"
         onClick={handleButtonClick}
       >
         +
@@ -19,4 +28,4 @@ const button = ({ progress, setProgress }) => {
   );
 };
 
-export default button;
+export default Button;
