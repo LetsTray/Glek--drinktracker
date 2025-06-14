@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
-import Alert from "./components/alert";
-import Button from "./components/button";
-import Progress from "./components/progress";
+import Alert from "./components/Alert";
+import Button from "./components/Button";
+import Progress from "./components/Progress";
 import Time from "./components/Time";
 import Data from "./components/Data";
 import Glass from "./assets/glass.png";
