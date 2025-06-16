@@ -50,7 +50,7 @@ const App = () => {
   return (
     <div className=" justify-center items-center">
       <Navbar />
-      <div className="flex justify-center items-center flex-col gap-y-10 mt-10 mb-10">
+      <div className="flex justify-center items-center flex-col gap-y-5 mt-10 mb-5">
         <Progress progress={progress} />
         <Alert show={alert} setAlert={setAlert} progress={progress} />
         <div className=" flex mr-10 ml-10 gap-28 mt-10 mb-10">
